@@ -5,6 +5,10 @@
   "repository": "git@github.com:MudOnTire/es6-babel-sass-parcel-boilerplate.git",
   "author": "13851731474 <13851731474@localhost>",
   "license": "MIT",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-runtime": "^7.9.0",
